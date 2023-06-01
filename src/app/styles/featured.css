@@ -1,0 +1,92 @@
+
+/* =================== */
+.parent_card {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.parent_card .card {
+    /* border: 1px solid blue; */
+    margin: 20px;
+    width: 382px;
+    /* height: 340px; */
+    /* background-color: rgba(206, 206, 198, 0.425); */
+}
+.parent_card .card .top_card {
+    /* border: 1px solid red; */
+    height: 340px;
+    position: relative;
+    background-color: rgb(205 203 203);
+    border-radius: 12px;
+}
+.parent_card .card .top_card .icon {
+    /* border: 1px solid rgba(255, 0, 0, 0.267); */
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
+.parent_card .card .top_card .content_top_card {
+    /* border: 1px solid rgba(255, 0, 0, 0.301); */
+    position: absolute;
+    bottom: 13px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 13px;
+}
+.parent_card .card .top_card .content_top_card p{
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+}
+.parent_card .card .footer_card {
+    /* border: 1px solid rgba(255, 0, 0, 0.301); */
+    padding: 13px;
+}
+.parent_card .card .footer_card .icon_footer_card {
+    color: rgb(59, 59, 59);
+    /* margin: 0; */
+    margin-top: 10px;
+    /* margin: 10px 10px; */
+}
+.parent_card .card .footer_card .icon_footer_card span {
+    margin: 0px 7px;
+}
+.btn{
+    /* border: 1px solid rgb(55, 0, 255); */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.btn button {
+    padding: 20px 60px;
+    border-radius: 30px;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    border: none;
+}
+.parent_content{
+    /* border: 1px solid red; */
+    max-width: 80rem;
+    margin: auto;
+}
+.parent_content h2{
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #343434;
+    margin-left: 22px;
+    position: relative;
+}
+.parent_content h2::after{
+    content: '';
+    border: 1px solid black;
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    bottom: -20px;
+    left: 3px;
+    background: black;
+}

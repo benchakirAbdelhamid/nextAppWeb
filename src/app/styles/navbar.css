@@ -1,0 +1,204 @@
+header nav{
+    background-color: white;
+}
+/* ================== */
+.parent_form{
+    min-height: 95vh;
+    max-width: 85rem;
+    margin: auto;
+    position: relative;
+    /* border: 3px solid yellow ; */
+}
+.header {
+    position: absolute;
+    bottom: 0px;
+    /* border: 1px solid rgb(63, 22, 22); */
+    width: 100%;
+}
+.container {
+    /* padding: 0 7%; */
+    /* border: 7px solid rgb(0, 134, 134); */
+    width: 90%;
+    margin: auto;
+  
+}
+
+.header h1 {
+    color: #4e4e4e;
+    text-align: center;
+    /* padding-top: 2%; */
+}
+.header h1 span{
+    margin: 0 10px;
+}
+.header h1 span:nth-child(1){
+    /* border: 1px solid red; */
+    font-size: 60px;
+    font-weight: 500;
+
+}
+.header h1 span:nth-child(2){
+    /* border: 1px solid rgb(0, 81, 255); */
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.header h1 span:nth-child(2)::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 3px;
+    width: 50px;
+    background-color: black;
+    height: 3px;
+}
+.header h1 span:nth-child(3){
+    /* border: 1px solid rgb(51, 255, 0); */
+    font-size: 30px;
+    font-weight: 500;
+}
+.title_content{
+    /* border: 1px solid red; */
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    background: #fff;
+    width:800px;
+    margin: 20px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+    /* margin-bottom:20px ; */
+    /* border: 1px solid red; */
+    background-color: #e2e0e0;
+}
+.search-bar form {
+    /* border: 1px solid yellow; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.search-bar form input {
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.search-bar form button {
+    background: #3a3a3a;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar form button  {
+    /* width: 15px; */
+    /* margin-top: 7px; */
+    color: wheat;
+}
+.location-input {
+    flex: 1;
+}
+.search-bar form label {
+    font-weight: 600;
+}
+
+
+/* for small screen devices */
+@media only screen and (max-width:1030px) {
+    nav{
+       position: fixed;
+       top: 0;
+       z-index: 100;
+       display: inline-block;
+       width: 100%;
+       padding: 100px 7% 0;
+       background: #000;
+       text-align: right ; 
+       max-height: 100px;
+       overflow: hidden;
+       transition: max-height 0.5s;
+    }
+    .header h1 span:nth-child(1){
+        font-size: 45px;    
+    }
+    .header h1 span:nth-child(2){
+        font-size: 25px;
+    }
+    .header h1 span:nth-child(3){
+        font-size: 25px;
+    }
+
+
+
+    .search-bar{
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px 10px 30px ;
+        border-radius: 5px;
+        position: relative;
+    }
+    .search-bar form{
+        display: block;
+    }
+    .search-bar form input{
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search-bar form button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,50%);
+    }
+
+}
+
+@media (max-width:550px) {
+    .header h1 span:nth-child(1){
+        font-size: 35px;    
+    }
+    .header h1 span:nth-child(2){
+        font-size: 18px;
+    }
+    .header h1 span:nth-child(3){
+        font-size: 18px;
+    }
+    .header h1 span{
+        margin: 0 3px;
+    }
+    
+}
+
+.icon_profile_bars{
+    /* border: 1px solid rgb(163, 163, 163); */
+    background-color: #e7e6e6;
+    padding: 5px 10px;
+    border-radius: 40px;
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon_bars{
+    /* border: 1px solid rgb(0, 4, 255); */
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.icon_profile{
+    /* border: 1px solid rgb(238, 255, 0); */
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #8b8a8ac7;
+    color: white;
+}

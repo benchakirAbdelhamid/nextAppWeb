@@ -1,0 +1,86 @@
+.paent_card {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.paent_card .card {
+    /* border: 1px solid blue; */
+    margin: 20px;
+    width: 279px;
+    height: 340px;
+    border-radius: 8px;
+    background-color: rgb(192, 192, 191);
+    position: relative;
+}
+.paent_card .card .icon {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
+.paent_card .card .group_star {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+}
+.paent_card .card .content_card {
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 13px;
+}
+.paent_card .card .content_card img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.parent_content{
+    /* border: 1px solid red; */
+    max-width: 80rem;
+    margin: auto;
+}
+.parent_content h2{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #343434;
+    margin-left: 22px;
+    position: relative;
+}
+.parent_content h2::after{
+    content: '';
+    border: 1px solid black;
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    bottom: -20px;
+    left: 3px;
+    background: black;
+}
+
+.title_centent{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 190px;
+    align-items: center;
+    width: 100%;
+}
+.title_centent h3{
+/* border: 1px solid red; */
+font-size: 16px;
+margin-right: 20px;
+}
+.title_centent h3 .icon_maps{
+    margin-right: 10px;
+}
+.title_centent h3 span{
+    font-weight: bold;
+}

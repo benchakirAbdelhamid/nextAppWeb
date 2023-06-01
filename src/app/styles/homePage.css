@@ -1,0 +1,42 @@
+.paent_card {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.paent_card .card {
+  /* border: 1px solid blue; */
+  margin: 20px;
+  width: 279px;
+  height: 340px;
+  border-radius: 8px;
+  background-color: rgb(192, 192, 191);
+  position: relative;
+}
+.paent_card .card .icon {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  font-size: 20px;
+}
+.paent_card .card .group_star {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+.paent_card .card .content_card {
+  /* border: 1px solid black; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 13px;
+}
+.paent_card .card .content_card img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
